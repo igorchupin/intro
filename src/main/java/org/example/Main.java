@@ -6,6 +6,7 @@ public class Main {
         Player cat = new Cat();
         Player dog = new Dog();
 
+
         cat.play();
         dog.play();
 
