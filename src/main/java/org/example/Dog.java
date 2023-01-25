@@ -17,6 +17,8 @@ public class Dog implements Player{
 
     public void doSound() {
         System.out.println(this.sound);
+        System.out.println(this.sound);
+        System.out.println(this.sound);
     }
 
 
