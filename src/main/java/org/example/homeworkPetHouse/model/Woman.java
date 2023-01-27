@@ -21,8 +21,6 @@ public class Woman {
                 storages[i].catFood.kilos -= 1;
                 System.out.println("Питомец накормлен");
                 return;
-//            }else if (i < storages.length) {
-//
             } else {
                 buyFood(storages[i]);
                 System.out.println("Кладовка пополнена");
