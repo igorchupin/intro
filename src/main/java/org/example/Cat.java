@@ -8,6 +8,7 @@ public class Cat extends Animal implements Player{
     public Cat() {
         this.dog = dog;
         boolean isAlive1 = super.isAlive;
+        this.a = 5;
     }
 
     @Override
@@ -18,5 +19,7 @@ public class Cat extends Animal implements Player{
     @Override
     public void learn(LearningTool learningTool) {
         learningTool.teach();
+        Player.super.doSmth();
     }
+
 }
