@@ -11,4 +11,5 @@ public class GenericClass<Type> {
     public Type getObject() {
         return object;
     }
+
 }

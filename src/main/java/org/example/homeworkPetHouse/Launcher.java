@@ -1,5 +1,6 @@
 package org.example.homeworkPetHouse;
 
+import org.example.annotations.AnnotationUsage;
 import org.example.homeworkPetHouse.model.*;
 
 public class Launcher {
@@ -15,6 +16,5 @@ public class Launcher {
         for (int i = 0; i < 30; i++) {
             cat.askForFood();
         }
-
     }
 }
