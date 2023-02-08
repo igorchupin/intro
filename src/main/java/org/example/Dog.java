@@ -4,7 +4,7 @@ public class Dog implements Player{
 
     public int dogAge;
 
-    String sound = new String("");
+    String sound = new String("DogSound");
 
 
     public Dog() {

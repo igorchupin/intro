@@ -55,56 +55,59 @@ public class CollectionFramework {
 //        System.out.println(dogDeque.getLast().name);
 
 
-        ArrayList<String> strings = new ArrayList<>();
-        strings.add("");
-        strings.add("");
-        strings.add(0,":");
-        System.out.println(strings.size());
-        strings.trimToSize();
-        System.out.println(strings.size());
-        strings.add(1, "");
-
-        LinkedList<String> stringLinkedList= new LinkedList<>();
-
-        stringLinkedList.add(0, "0");
-        stringLinkedList.add(1, "1");
-        stringLinkedList.add(2, "2");
-        stringLinkedList.add(1, "3");
-        System.out.println(stringLinkedList);
-        System.out.println(stringLinkedList);
-
-
-        HashSet<Dog> stringHashSet = new HashSet<>();
-
-        stringHashSet.add(dog1);
-        stringHashSet.add(dog);
-
-
-        System.out.println(dog1);
-
-        TreeSet<Integer> integerTreeSet = new TreeSet<>();
-
-        integerTreeSet.add(2);
-        integerTreeSet.add(1);
-        integerTreeSet.add(3);
-
+//
+//        ArrayList<String> strings = new ArrayList<>();
+//
+//        strings.add("");
+//        strings.add("");
+//        strings.add(0,":");
+//        System.out.println(strings.size());
+//        strings.trimToSize();
+//        System.out.println(strings.size());
+//        strings.add(1, "");
+//
+//        LinkedList<String> stringLinkedList= new LinkedList<>();
+//
+//        stringLinkedList.add(0, "0");
+//        stringLinkedList.add(1, "1");
+//        stringLinkedList.add(2, "2");
+//        stringLinkedList.add(1, "3");
+//        System.out.println(stringLinkedList);
+//        System.out.println(stringLinkedList);
+//
+//
+//        HashSet<Dog> stringHashSet = new HashSet<>();
+//        LinkedHashSet<String> strings1 = new LinkedHashSet<>();
+//
+//        stringHashSet.add(dog1);
+//        stringHashSet.add(dog);
+//
+//
+//        System.out.println(dog1);
+//
+//        TreeSet<Integer> integerTreeSet = new TreeSet<>();
+//
+//        integerTreeSet.add(2);
+//        integerTreeSet.add(1);
+//        integerTreeSet.add(3);
+//
         Comparator<Dog> comparator = new Comparator<Dog>() {
             @Override
             public int compare(Dog o1, Dog o2) {
                 return 1;
             }
         };
-
-
-        TreeSet<Dog> dogTreeSet = new TreeSet<>(comparator);
-        dogTreeSet.add(dog1);
-        dogTreeSet.add(dog);
-        dogTreeSet.add(new Dog("Barbos"));
-
-        System.out.println(dogTreeSet);
-
+//
+//
+//        TreeSet<Dog> dogTreeSet = new TreeSet<>(comparator);
+//        dogTreeSet.add(dog1);
+//        dogTreeSet.add(dog);
+//        dogTreeSet.add(new Dog("Barbos"));
+//
+//        System.out.println(dogTreeSet);
+//
 //        Iterator<Dog> iterator = dogTreeSet.iterator();
-
+//
 //        while (iterator.hasNext()) {
 //            iterator.next();
 //            iterator.remove();
@@ -125,26 +128,28 @@ public class CollectionFramework {
 //
 //        iterator.forEachRemaining(dogConsumer);
 
-        for (Dog dogFromCollection : dogTreeSet) {
-            System.out.println(dogFromCollection.getName());
-        }
-
-        Map<String, Integer> map = new HashMap<>();
-        map.put("One", 1);
-        map.put("Two", 2);
-        map.put("Three", 3);
-        System.out.println(map);
-
-        map.forEach((k, v) -> {
-
-        });
-
-        Set<String> strings1 = map.keySet();
-        System.out.println(strings1);
-
-        Set<Map.Entry<String, Integer>> entries = map.entrySet();
-        entries.forEach(node -> {
-            System.out.println(node.getKey());
-        });
+//        for (Dog dogFromCollection : dogTreeSet) {
+//            System.out.println(dogFromCollection.getName());
+//        }
+//
+//        Map<String, Integer> map = new HashMap<>();
+//        map.put("One", 1);
+//        map.put("Two", 2);
+//        map.put("Three", 3);
+//        System.out.println(map);
+//
+//        map.forEach((k, v) -> {
+//
+//        });
+//
+//        Set<String> strings1 = map.keySet();
+//        System.out.println(strings1);
+//
+//        Set<Map.Entry<String, Integer>> entries = map.entrySet();
+//        entries.forEach(node -> {
+//            System.out.println(node.getKey());
+//        });
+        Map<String, String> map;
     }
+
 }
