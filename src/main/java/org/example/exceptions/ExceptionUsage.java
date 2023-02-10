@@ -33,15 +33,17 @@ public class ExceptionUsage {
 //            System.out.println(e.getLocalizedMessage());
 //        }
 
-//        Stream<Integer> integerStream = Stream.of(1);
-//        try (ByteArrayInputStream inputStream = new ByteArrayInputStream(new byte[1])) {
-//            fileExecutor.doSmth(cat);
-//            integerStream.count();
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        } finally {
-//            integerStream.count();
-//        }
+        Stream<Integer> integerStream = Stream.of(1);
+        try (ByteArrayInputStream inputStream = new ByteArrayInputStream(new byte[1])) {
+            fileExecutor.doSmth(cat);
+            integerStream.count();
+        } catch (IOException | ArithmeticException e) {
+            throw new RuntimeException(e);
+        } catch (NullPointerException  e) {
+            System.out.println();
+        } finally {
+            integerStream.count();
+        }
 
         try {
             throw new MyException();

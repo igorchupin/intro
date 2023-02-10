@@ -1,5 +1,6 @@
 package org.example.exceptions;
 
+import org.example.Dog;
 import org.example.Player;
 
 import java.io.File;

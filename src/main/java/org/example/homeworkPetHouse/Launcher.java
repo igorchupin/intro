@@ -16,5 +16,10 @@ public class Launcher {
         for (int i = 0; i < 30; i++) {
             cat.askForFood();
         }
+
+        Thread thread = Thread.currentThread();
+        thread.start();
+
+        Thread newThread = new Thread(() -> System.out.println(), "");
     }
 }
